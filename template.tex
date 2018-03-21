@@ -1,0 +1,62 @@
+\documentclass[a4paper,UTF8]{article}
+\usepackage{graphics}
+\usepackage{xeCJK}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+
+\newCJKfontfamily[kaiti]\kaiti{KaiTi}
+
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}           % 一号, 1.4 倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}          % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}          % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}        % 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}        % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}            % 四号, 1.5 倍行距
+\newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}    % 半小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}            % 小四, 1.5倍行距
+\newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}       % 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}    % 五号, 单倍行距
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics{figure/sjtubanner}}
+\chead{}
+\rhead{船舶设备2018}%需修改之处
+\lfoot{}
+\cfoot{\small --~~{\bfseries\thepage}~~of~~{\bfseries{\pageref{last}}}~~--}
+\rfoot{}
+\fancyheadoffset{50pt}
+\renewcommand{\headheight}{32pt}
+
+\setlength{\parindent}{2.45em}%来调整首行缩进的大小。这里的 2.45em 是中文小四号字大小两个中文字的长度。
+
+\begin{document}
+\begin{titlepage}
+	\thispagestyle{empty}
+	\begin{center}
+		\vspace*{20pt} \vskip 7pt
+		\includegraphics{figure/sjtulogo}
+		\vskip 30pt
+		{\kaiti \fontsize{32}{32} 舵设备大作业}%修改之处
+		\vskip 15pt 
+		{\xiaosi \MakeUppercase{\textbf{Ship Equipment Project--Rudder}}}%修改之处
+		\vskip 15pt
+		\includegraphics{figure/sjtubadge}
+		\vskip \stretch{2}
+		    \vskip \stretch{1}
+		{\kaiti\sanhao
+			\def\arraystretch{1.1}
+			\begin{tabular}{r@{：}l}%修改之处
+				\makebox[4em][s]{学生姓名}        & \underline{\makebox[180pt]{简心语}} \\
+				\makebox[4em][s]{学生学号} 		& \underline{\makebox[180pt]{515021910260}} \\
+				\makebox[4em][s]{专\hspace{\fill}业}    	      & \underline{\makebox[180pt]{船舶与海洋工程}} \\
+				\makebox[4em][s]{指导老师}        & \underline{\makebox[180pt]{}} \\
+				\makebox[4em][s]{学\hspace{\fill}院}     & \underline{\makebox[180pt]{船舶海洋与建筑工程学院}}
+		\end{tabular}}
+	\end{center}
+\end{titlepage}
+
+\newpage
+\section
+haha
+\end{document}
